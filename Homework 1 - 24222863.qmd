@@ -66,7 +66,7 @@ summary(airquality)
 
 ## Visualizations Of Ozone Levels
 
-This boxplot shows how ozone concentration (ppb) varies across the months from May (5) to September (9):
+This box plot shows how ozone concentration (ppb) varies across the months from May (5) to September (9):
 
 ```{r echo=FALSE}
 # boxplot of Ozone grouped by month
