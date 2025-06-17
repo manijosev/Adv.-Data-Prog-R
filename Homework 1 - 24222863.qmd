@@ -1,6 +1,6 @@
 ---
 title: "Homework 1"
-author: "Mani Jose 24222863"
+author: "Mani Jose - 24222863"
 format: 
   html:
     fig-cap-location: bottom
@@ -52,7 +52,7 @@ kable(variable_summary)
 ## Basic summary statistics
 
 ```{r echo=FALSE}
-# summary stats
+# summary stats of the dataset
 summary(airquality)
 ```
 
@@ -71,7 +71,8 @@ This box plot shows how ozone concentration (ppb) varies across the months from 
 ```{r echo=FALSE}
 # boxplot of Ozone grouped by month
 boxplot(Ozone ~ Month, data = airquality, col = "#D95F02",
-        xlab = "Month", ylab = "Ozone (ppb)", main = "Ozone Levels by Month")
+        xlab = "Month", 
+        ylab = "Ozone (ppb)", main = "Ozone Levels by Month")
 ```
 
 -   *Ozone levels are generally **lowest in May and June**, with relatively compact boxplots and fewer high values.*
@@ -85,7 +86,7 @@ boxplot(Ozone ~ Month, data = airquality, col = "#D95F02",
 **Ozone levels tend to peak in mid-summer, possibly due to stronger sunlight and higher temperatures which accelerate ozone formation.**
 
 ```{r echo=FALSE}
-# create date variable for plotting refrence
+# create date variable for plotting reference
 airquality$Date <- as.Date(paste(1973, airquality$Month, airquality$Day, sep = "-"))
 # line plot of Ozone levels
 plot(airquality$Date, airquality$Ozone, type = "l", col = "#9467bd",
